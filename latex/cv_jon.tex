@@ -60,10 +60,7 @@
 
 \noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-\Description{I like to code and to be near people, coders or not, to
-  learn from. One of the most important thing in a job for me is the
-  team and i'd like to find that team to work with. Code and design
-  software architectures is what i like and i hope to find an interesting project to do this.}\vspace{2em} % Goal text
+\Description{I like to code and to be near people, coders or not, to learn from. One of the most important thing in a job for me is the team and i'd like to find that team to work with. Code and design software architectures is what I like and I hope to find an interesting project to do this.}\vspace{2em} % Goal text
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -74,11 +71,10 @@
 \NewEntry{2012--Present}{Software Engineer, \textsc{Wuaki.tv}
   --- Barcelona}
 
-\Description{\MarginText{Wuaki.tv}Wuaki.tv offers a video on demand service with movies and tv shows. I work in the backend department as ruby developer and i'm the tech lead of one of the development
-  teams.}
-\Description{\MarginText{}In the backend department we work with Ruby on
+\Description{\MarginText{Wuaki.tv}Wuaki.tv offers a video on demand service with movies and tv shows. I work in the backend area as Ruby developer and i'm the tech lead of one of the development teams. Wuaki.tv service is actually in Spain, United Kingdom and France. We'll launch the service in other markets soon.}
+\Description{\MarginText{}In the backend area we work with Ruby on
   Rails and Sinatra as web frameworks. Most of the applications are
-  written using Rails but we developed a independient user service
+  written using Rails but we developed an independient user service
   using Sinatra.}
 \Description{\MarginText{}I was one of the members of the team that developed the project to
   launch Wuaki.tv in UK, and the mentioned user service was one of the
@@ -86,13 +82,16 @@
   project was the integration with play.com (Play.com). Play.com users
   are now able to sign-in in Wuaki.tv UK with their Play.com
   credentials and all their data is synced}
-\Description{\MarginText{}The team i'm leading is developing a project
-  with Grape (similar to Sinatra), RabbitMQ and Riak
-  to offer an asyncronous and common payment gateway for the different
-  applications, platforms and countries we support.}
-\Description{\MarginText{}Other technologies we use are Redis, MySQL,
-  Capistrano, Janky, Jenkins, New Relic and Errbit(Airbrake).
-  \\ \href{http://es.wuaki.tv}{http://es.wuaki.tv}}
+\Description{\MarginText{}I've developed our own payment gateway so our applications
+  have a unique gateway interface, not depending on the country or final payment gateway to use. This service
+  is developed as a HTTP API that just queues AMQP messages. Some workers subscribe to the payments queue and
+  the payments are processed. I've used RabbitMQ as AMQP broker and we are using some of the cool features it has. We store all the payments data in Riak.}
+\Description{\MarginText{}In Wuaki.tv we're trying to go to a Continous Delivery strategy, I've been the lead of an internal project to manage the process of releasing and deployment of Github pull requests in our Amazon instances. This project use heavily the Github hooks, Jenkins hooks and some internal tools to release our projects. This is quiet similar to the service that DigitalOcean offers.}
+\Description{\MarginText{}Although is not my main area, sometimes I try to help our operations department and help them organizing the Puppet modules or writing my own modules. I'm really interested in the devops tasks in our projects. So trying to help the operations area is always a good change to learn new things.
+
+    \\\href{http://wuaki.tv}{http://wuaki.tv}}
+
+
 %------------------------------------------------
 
 \NewEntry{2011--2012}{Software Engineer, \textsc{Gnuine}  --- Barcelona}
@@ -104,11 +103,11 @@
 \Description{
     In these projects usually we developed the backend with ruby and
     most part of the javascript development in the frontend. At the
-    end of my time in Gnuine i was lead project developer and projects manager.
-    The most important projects i worked for are:
+    end of my time in Gnuine I was lead project developer and projects manager.
+    The most important projects I worked for are:
     \begin{itemize}
     \item FC Barcelona. I developed some parts of the Ajax widgets for
-      this projects, like photo or video galleries. Also i made some
+      this projects, like photo or video galleries. Also I made some
       changes in the company framework, Ubiquo, to fit the project
       requeriments. \href{http://fcbarcelona.com}{http://fcbarcelona.com}
     \item xiptv. This was a video on demand project for regional
@@ -155,7 +154,7 @@
     of the Basque Country} --- Bilbao}
 
 \Description{\MarginText{Univertsity of the Basque Country} In the
-  telecomunications researching group i researched about traffic
+  telecomunications researching group I researched about traffic
   packages capturing in multiprocessors systems using Linux. We
   analyzed the performance of traffic processing in kernel space and in
   user space. For this we developed a processing system in kernel space
@@ -168,7 +167,7 @@
 \NewEntry{2006 -- 2007}{System and Software Developing Fellow, \textsc{System Stein Heurtey} --- Bilbao}
 
 \Description{\MarginText{System Stein Heurtey} As fellow in this
-  company i managed a couple of Solaris systems and helped the
+  company I managed a couple of Solaris systems and helped the
   employees compiling and modifing some Fortran applications the company used for
   mathematic calcs.}
 %------------------------------------------------
@@ -176,7 +175,7 @@
 \NewEntry{2005 -- 2006}{Web developer, \textsc{Univertsity of Basque Country} --- Bilbao}
 
 \Description{\MarginText{Univertsity of Basque Country}During two
-  years i was the developer of the website of the engineering campus
+  years I was the developer of the website of the engineering campus
   in the Univertsity of the Basque Country. I used ASP.net and PHP for
 the development.}
 %------------------------------------------------
@@ -224,32 +223,32 @@ the development.}
 
 \spacedlowsmallcaps{Programming Languages}\vspace{1em}
 
-\Description{\MarginText{Actually}\textsc{Ruby}, \textsc{Javascript}}
-\Description{\MarginText{Learning}\textsc{Common Lisp}, \textsc{Clojure}}
-\Description{\MarginText{Others in the past}\textsc{C}, \textsc{C++}}
+\Description{\MarginText{Ruby}This is actually my main programming language. I've been developing with Ruby for 4 years.}
+\Description{\MarginText{Javascript}I've developed many projects using Javascript in the past. But I'm not using Javascript right now cause I'm focused in backend tasks and I'm not currently using Node.js in any project. I'm not a super Javascript hacker, but I can write it without problems and I can improve it quickly.}
+\Description{\MarginText{Python}Python was my prefered programming language some years ago. I used to use it in the univertsity and all the tools or projects I wrote were written in Python. I've played with Django, Celery, Twisted and Flask}
+\Description{\MarginText{C and C++}I've written a lot of code with C and C++. While I was at the univertsity researching group I developed some kernel patches and modules for our analysis about traffic capture in Linux. I wrote some patches for the free version of Worms (Wormux) and some patches for the KDE desktop.}
+\Description{\MarginText{Lisp dialects}I'm an Emacs user, so I like Lips :-). I've played with Elisp and Clojure but I've not yet used in any professional project, just in personal projects or just for fun.}
 
 \spacedlowsmallcaps{Computer Skills}\vspace{1em}
-
-\Description{\MarginText{Web Frameworks}\textsc{Ruby on Rails}, \textsc{Sinatra}, \textsc{Compojure}}
 
 \Description{\MarginText{Testing Frameworks}\textsc{Capybara},
   \textsc{RSpec}, \textsc{TestUnit}}
 
 \Description{\MarginText{Relational Databases}\textsc{MySQL},
   \textsc{Postgres}}
-\Description{\MarginText{NoSQL Databases}\textsc{Redis}, \textsc{Riak}}
+\Description{\MarginText{NoSQL Databases}\textsc{Redis}, \textsc{Riak}, \textsc{ElasticSearch}}
 
 \Description{\MarginText{OS}\textsc{Arch Linux}}
 
-\Description{\MarginText{Source Control}\textsc{git}, \textsc{bazaar}, \textsc{svn}}
+\Description{\MarginText{Source Control}\textsc{git}}
 
-\Description{\MarginText{Editors}\textsc{emacs}}
+\Description{\MarginText{Editors}\textsc{Emacs}}
 
 \Description{\MarginText{Amazon Services}\textsc{Cloudfront},
   \textsc{S3}, \textsc{AWS}, \textsc{RDS}}
 
-\Description{\MarginText{Other}\textsc{RabbitMQ}, \textsc{NewRelic},
-  \textsc{Airbrake/Errbit}, \textsc{Janky \& Jenkins}, \textsc{Capistrano} }
+\Description{\MarginText{Other}\textsc{ZeroMQ},\textsc{RabbitMQ}, \textsc{NewRelic},
+  \textsc{Janky \& Jenkins}, \textsc{Capistrano} }
 
 
 %------------------------------------------------
